@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VAR</title>
+</head>
+<body>
+    <script>
+        var myName="Abhishek";
+        console.log(myName);
+        console.log(typeof(myName));
+    //   number
+    var myPhoneno=4453434;
+    console.log(myName +  "mobile number" + myPhoneno);
+    // boolen 
+    var stauts=false;
+    console.log(myName +  "mobile number " + stauts);
+    // null 
+    var adderss="null";
+    console.log(adderss);
+    console.log(typeof(null));
+    // bigint
+    // for big integer
+    // symbol
+    var name1="Abhishek";
+    var name2="Abhishek";
+    console.log(name1==name2);
+    
+    // reference (object) type==mutable in memory and keep value in pair
+    // object ,array fuction
+
+
+    let myInfo={
+        name:"Abhi",age:13, num:32456,add:null,brach:"cse",section:14
+    };
+    console.log(myInfo);
+    console.log(myInfo.name);
+    let keys =Object.keys(myInfo);
+    console.log("my info  " + keys.length);
+    // function
+    function ab(){
+      var num1=12;
+      var num2=13;
+      var num=num1+num2;
+      console.log("total sum  " +num);
+      console.log(typeof(ab));
+    }
+    ab();
+
+    // array-collection of data type for similar
+     let studentList=["ABHI" , "ABHISHEK" ,23 ,"ddfd"] ;
+     console.log(studentList[1]);
+
+    //  for loop
+    for(let i=0;i<studentList.length;i++){
+       console.log(studentList[i]);
+    }
+
+    
+    </script>
+</body>
+</html>
