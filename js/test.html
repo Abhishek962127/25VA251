@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let sum=0;
+        let subjectMarks=[23,45,67,89,56];
+    for(let i=0;i<subjectMarks.length;i++ ){
+         sum=sum+subjectMarks[i];  
+    }
+    let avg=sum/subjectMarks.length;
+    if(avg<100 && avg>=90){
+        console.log("Grade A");
+    }
+    else if(avg<90 && avg>=80){
+        console.log("Grade B");
+    }
+    else if(avg<80 && avg>=70){
+        console.log("Grade c");
+    }
+    else if (avg<70 && avg>=60){
+        console.log("Grade D");
+    }
+    else {
+        console.log("Grade E")
+    }
+    </script>
+</body>
+</html>
