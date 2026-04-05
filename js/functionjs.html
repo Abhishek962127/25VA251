@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function in JS</title>
+</head>
+<body>
+    <!-- Fuction :block of code ,design to perform specific task -->
+     <script>
+        function demo(){
+            console.log("HELLO");
+        }
+        demo();
+        function demo1(text){
+            console.log("Hello" +  text);
+        }
+        demo1("ABHISHEK ");
+        function sum(a,b=9){
+            var num1=a;
+            var num2=b;
+            var res=num1+num2;
+            console.log("ADD OF NUMBER " + res);
+        }
+        sum(12);
+
+
+        function cal(){
+            function add(a,b){
+                console.log("add two number "+ (a+b));
+            }
+            function minus(a,b){
+                console.log("sub of two number " +(a-b));
+            }
+            function mul(a,b){
+                console.log("multipily " +(a*b));
+            }
+            mul(5,6);
+            add(6,7);
+            minus(7,7);
+        }
+        cal();
+
+
+        let msg=function(){
+            console.log("HELLO");
+        }
+        msg();
+
+
+
+ 
+        let msg2=(age)=>{
+            if(age>=18){
+                console.log("Valid age");
+            }
+        }
+        msg2 (25);
+
+
+
+        // call back function
+        function call(a,b,callback){
+            var num1=a;
+            console.log("first number "+num1);
+            var num2=b;
+            console.log("second number" +num2);
+
+            var res=num1+num2;
+            callback(res);
+        }
+        function display(res){
+            console.log("resultant " +res);
+
+        }
+        call(12,3,display);
+
+        // call back using setimeout API
+
+        function greeting(){
+            document.writeln("HELLO ");
+        }
+        function loading(){
+            document.writeln("DATA>>>>");
+        }
+        
+        setTimeout(greeting,2000);
+        loading();
+
+        let promise=new Promise(function(reolve,reject){
+                let myage =10;
+                if(myage>=18){
+                    reolve("valid");
+                }
+                else{
+                    reject("wait ");
+                }
+        }
+    );
+      promise.then(result=>console.log(result)).catch(error=>console.log(error));
+
+
+    //   fetch API
+    // async function user_data() {
+    //     try{
+    //         let pro=await fetch('https://dummyjson.com/products');
+    //          pro=await pro.json();
+    //          console.log(pro);
+    // }
+    // catch(error){
+    //     console.log("not vaild" + error);
+    // }
+        
+    // }
+    
+    // Local storage:- 
+    // let my_info={
+    //     name:"abhishek",
+    //     mob:2344432,
+    //     add:"hata bazar",
+
+    // };
+    // let my_infoData=JSON.stringify(my_info);
+
+    // localStorage.setItem('prefrences',my_infoData);
+    // // retrive data and convert int JSON  string
+    // let myprefrences=localStorage.getItem('prefrences');
+
+    // let my_infoPre=JSON.parse(myprefrences);
+
+    // console.log(my_infoPre.name);
+
+    let num=[3,4,5,6,67,5];
+   
+    console.log(sum1);
+    </script>
+</body>
+</html>
