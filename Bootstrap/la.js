@@ -88,11 +88,11 @@ function App() {
   );
 }
 
-// Reusable quantity control
+
 const QtyCtrl = ({ id, qty, add, remove }) => (
   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', border: '1px solid #60b246', borderRadius: 4, width: '100%', boxSizing: 'border-box' }}>
     <button onClick={() => remove(id)} style={{ border: 'none', background: 'none', color: '#60b246', padding: '6px 12px', cursor: 'pointer', fontWeight: 'bold', fontSize: 16 }}>-</button>
-    <span style={{ color: '#60b246', fontWeight: 'bold' }}>{qty}</span>
+    <span style={{ color: '#60b24', fontWeight: 'bold' }}>{qty}</span>
     <button onClick={() => add(id)} style={{ border: 'none', background: 'none', color: '#60b246', padding: '6px 12px', cursor: 'pointer', fontWeight: 'bold', fontSize: 16 }}>+</button>
   </div>
 );
